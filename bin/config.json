@@ -1,0 +1,44 @@
+{
+    "projects": [
+        {
+            "id":       "sifti",
+            "name":     "Sifti.me",
+            "type":     "Personal Project",
+            "url":      "http://sifti.me",
+            "date":     "2012",
+            "note":     "As an avid record collector, I created sifti.me to find the best deals on LPs and Cds through online retailers.",
+            "images":[
+                "images/gallery/sifti1.jpg",
+                "images/gallery/sifti2.jpg",
+                "images/gallery/sifti3.jpg"
+            ]
+        },
+        
+        {
+            "id":       "cordova",
+            "name":     "Apache Cordova",
+            "type":     "Web Design / Branding",
+            "url":      "http://incubator.apache.org/cordova/",
+            "date":     "2012",
+            "note":     "Apache Cordova is a platform for building native mobile applications using HTML, CSS and JavaScript.",
+            "images":[
+                "images/gallery/cordova1.jpg",
+                "images/gallery/cordova2.jpg",
+                "images/gallery/cordova3.jpg"
+            ]
+        },
+        
+        {
+            "id":       "jsbin",
+            "name":     "JS Bin",
+            "type":     "Logo Design",
+            "url":      "http://jsbin.com/",
+            "date":     "2012",
+            "note":     "JS Bin is a Collaborative JavaScript Debugging tool created by Remy Sharp.",
+            "images":[
+                "images/gallery/jsbin1.jpg",
+                "images/gallery/jsbin2.jpg"
+            ]
+        }
+    ]
+}

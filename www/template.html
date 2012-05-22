@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   <title>Yohei Shimomae</title>
+   <script src="js/smooth.js" type="text/javascript"></script>
+   <script src="js/jquery-1.7.2.min.js"></script>
+   <script src="js/lightbox.js"></script>
+   <link href="css/lightbox.css" rel="stylesheet" />
+   <!-- localstart -->
+   <link rel="stylesheet/less" type="text/css" href="css/master.less">
+   <script src="js/less-1.1.5.min.js" type="text/javascript"></script>
+   <!-- localend -->
+   <!-- publicstart <link rel="stylesheet" type="text/css" href="css/master.css"> publicend -->
+</head>
+<body class="us2012">
+    
+<div id="header">
+    <div class="wrap">
+        <a href="#top" class="name-link">Yohei Shimomae</a>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-dropdown">
+            <select onchange="location = this.options[this.selectedIndex].value;">
+                <option value="#about">About</option>
+                <option value="#projects">Projects</option>
+                <option value="#contact">Contact</option>
+            </select>
+        </div>
+    </div>
+</div>  
+
+<a class="scroll-point" name="top"></a>
+
+<div class="section leadin">
+<div class="wrap">
+    <h1>I’m a hybrid designer/developer.</h1><br/>
+    <h1>I do anything from mobile UX design,</h1><br/> 
+    <h1>web/graphic design to</h1><br/>
+    <h1>front/backend programming.</h1>
+</div>
+</div>
+
+
+<a class="scroll-point" name="about"></a>
+
+<div class="wrap">
+    <h2 class="heading">About @yoheis</h2>
+    <div class="text-wrap">
+    <p>Born in Japan, I moved to beautiful Vancouver BC as a teenager and graduated from Simon Fraser University under School of Technology and Arts, focusing on Media Arts and Interaction Design. I have been working in the tech industry since 2008.</p> 
+    <p>I consider myself a hybrid designer/developer and through work, I have both designed and devloped various mobile applications as well as websites and web applications. Along side with IA, UX and graphic design, I am proficient in Javascript, CSS, HTML, Ruby Java and PHP.</p>
+    <p>Currently, I work at Adobe PhoneGap team as a UX Designer.</p>
+    </div>
+</div>
+
+<a class="scroll-point" name="projects"></a>
+
+<div class="section">
+<div class="wrap">
+    <h2 class="white">Projects:</h2>
+    <ul class="project-list">
+    {{#projects}}
+    <li>
+        <div class="heading">
+            <h2>{{name}} [<a href="{{url}}" target="_blank">url</a>] </h2>
+            <p>{{type}} | {{date}}<br/><br/>{{note}}</p>
+        </div>
+        <div class="text-wrap gallery">
+            {{#images}}
+                {{#preview}}
+                <a href="{{preview}}" rel="lightbox[{{uid}}]"><span class="mask"> </span><img src="{{thumb}}" alt=""/></a>
+                {{/preview}}
+                {{^preview}}
+                <div class="img"> </div>
+                {{/preview}}
+            {{/images}}
+            <div class="clear"> </div>
+        </div>
+    </li>
+    {{/projects}}
+    </ul>
+</div>
+</div>
+
+<a class="scroll-point" name="contact"></a>
+
+<div class="wrap">
+    <h2 class="heading">Contact</h2>
+    <div class="text-wrap">
+    <p>Yohei Shimomae
+        <br/>Email: <a href="mailto:yohei.shimomae@gmail.com">yohei.shimomae@gmail.com</a>
+        <br/>Twitter: <a href="https://twitter.com/#!/yoheis">@yoheis</a></p>
+    <p>© {{year}} Yohei Shimomae</p>
+    </div>
+</div>
+
+</body>
+</html>
