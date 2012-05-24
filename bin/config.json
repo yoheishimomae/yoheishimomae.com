@@ -12,12 +12,12 @@
                 "images/gallery/sifti2.jpg",
                 "images/gallery/sifti3.jpg"
             ]
-        },
+        }
         
-        {
+        ,{
             "id":       "cordova",
             "name":     "Apache Cordova",
-            "type":     "Web Design / Branding",
+            "type":     "Web Design/Branding",
             "url":      "http://incubator.apache.org/cordova/",
             "date":     "2012",
             "note":     "Apache Cordova is a platform for building native mobile applications using HTML, CSS and JavaScript.",
@@ -26,9 +26,9 @@
                 "images/gallery/cordova2.jpg",
                 "images/gallery/cordova3.jpg"
             ]
-        },
+        }
         
-        {
+        ,{
             "id":       "jsbin",
             "name":     "JS Bin",
             "type":     "Logo Design",
@@ -38,6 +38,20 @@
             "images":[
                 "images/gallery/jsbin1.jpg",
                 "images/gallery/jsbin2.jpg"
+            ]
+        }    
+        
+        ,{
+            "id":       "portfolio2008",
+            "name":     "Portfolio 2008",
+            "type":     "Personal Project",
+            "url":      "misc/portfolio2008",
+            "date":     "2008",
+            "note":     "Flash portfolio from back in the day. Winner of Best Canadian Student Website in <a href='http://www.fitc.ca/awards/2009/' target='_blank'>FITCT 09</a>.",
+            "images":[
+                "images/gallery/portfolio2008_1.jpg",
+                "images/gallery/portfolio2008_2.jpg",
+                "images/gallery/portfolio2008_3.jpg"
             ]
         }
     ]
