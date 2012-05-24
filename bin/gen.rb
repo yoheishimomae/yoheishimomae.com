@@ -88,6 +88,7 @@ Dir.mkdir( tmp_directory ) unless File.exists?( tmp_directory )
 # copying files from www
 files = Dir.glob( 'www/*' )
 FileUtils.cp_r( files, tmp_directory )
+FileUtils.cp( 'www/.htaccess', tmp_directory + '/.htaccess')
 
 # generating index.html
 File.open( tmp_directory + '/index.html', 'w' ) do | file | 
