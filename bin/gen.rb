@@ -12,24 +12,6 @@ view = Mustache.new
 json_file = File.dirname( __FILE__ ) + '/config.json';
 data = JSON.parse( IO.read( json_file ) )
 
-# download button and archives
-# releases = data['projects']
-# if releases.length > 0
-#     latest_item = releases[0]
-#     archives = releases.slice(1, releases.length)
-#     len = archives.length;
-#     column_len = ( len / 3.0 ).ceil
-#     view[:download_set1] = archives.slice( 0, column_len )
-#     view[:download_set2] = archives.slice( column_len, column_len )
-#     view[:download_set3] = archives.slice( column_len*2, column_len )
-#     view[:latest_version] = latest_item['version']
-#     view[:download_link] = latest_item['file']
-#     view[:hide_archives] = len == 0
-# else
-#     view[:hide_archives] = true
-#     view[:no_download] = true
-# end
-
 # list of repos
 repos = data['projects']
 
@@ -107,7 +89,9 @@ for i in delete_files
 end
 
 # rename tmp folder to public
-p_files = Dir.glob( 'public/*' )
-FileUtils.rm_rf( p_files ) unless !File.exists?( tmp_directory )
+if File.exists?( 'public' )
+  FileUtils.rm_rf( 'public' ) 
+end
+
 File.rename( tmp_directory, 'public' )
 
