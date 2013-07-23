@@ -1,6 +1,21 @@
 {
     "projects": [
+
         {
+            "id":       "pgbuild",
+            "name":     "PhoneGap Swag",
+            "type":     "Design",
+            "url":      "http://pgday.phonegap.com/",
+            "date":     "2013",
+            "note":     "As a primary designer on PhoneGap, I've created a mascot known as \"Build Bot\". ©Adobe Systems Inc.",
+            "images":[
+                "images/gallery/pgbuild1.jpg",
+                "images/gallery/pgbuild2.jpg",
+                "images/gallery/pgbuild3.jpg"
+            ]
+        }  
+
+        ,{
             "id":       "sifti",
             "name":     "Sifti.me",
             "type":     "Personal Project",
