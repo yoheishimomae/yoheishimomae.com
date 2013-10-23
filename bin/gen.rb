@@ -3,7 +3,6 @@ require 'mustache'
 require 'rubygems'
 require 'date'
 require 'json'
-require 'ftools'
 require 'Fileutils.rb'
 
 # preparation for mustache
